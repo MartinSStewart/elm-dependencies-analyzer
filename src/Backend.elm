@@ -69,7 +69,8 @@ hardCodedVersions : Dict String (List ( Version, Int ))
 hardCodedVersions =
     [ ( "lamdera/core", [ ( ( 1, 0, 0 ), 0 ) ] )
     , ( "lamdera/codecs", [ ( ( 1, 0, 0 ), 0 ) ] )
-    , ( "lamdera/program-test", [ ( ( 1, 0, 0 ), 0 ), ( ( 2, 0, 0 ), 0 ) ] )
+    , ( "lamdera/program-test", [ ( ( 1, 0, 0 ), 0 ), ( ( 2, 0, 0 ), 0 ), ( ( 3, 0, 0 ), 0 ) ] )
+    , ( "lamdera/containers", [ ( ( 1, 0, 0 ), 0 ) ] )
     ]
         |> Dict.fromList
 
@@ -129,6 +130,7 @@ hardCodedDependencies =
         , ( "elm/http", ( ( 2, 0, 0 ), ( 3, 0, 0 ) ) )
         , ( "elm/json", ( ( 1, 1, 3 ), ( 2, 0, 0 ) ) )
         , ( "elm/parser", ( ( 1, 1, 0 ), ( 2, 0, 0 ) ) )
+        , ( "elm/svg", ( ( 1, 0, 1 ), ( 2, 0, 0 ) ) )
         , ( "elm/time", ( ( 1, 0, 0 ), ( 2, 0, 0 ) ) )
         , ( "elm/url", ( ( 1, 0, 0 ), ( 2, 0, 0 ) ) )
         , ( "elm/virtual-dom", ( ( 1, 0, 0 ), ( 2, 0, 0 ) ) )
@@ -140,6 +142,39 @@ hardCodedDependencies =
         , ( "lamdera/core", ( ( 1, 0, 0 ), ( 2, 0, 0 ) ) )
         , ( "mgold/elm-nonempty-list", ( ( 4, 2, 0 ), ( 5, 0, 0 ) ) )
         , ( "pzp1997/assoc-list", ( ( 1, 0, 0 ), ( 2, 0, 0 ) ) )
+        ]
+            |> Dict.fromList
+      )
+    , ( ( "lamdera/program-test", ( 3, 0, 0 ) )
+      , [ ( "danfishgold/base64-bytes", ( ( 1, 1, 0 ), ( 2, 0, 0 ) ) )
+        , ( "elm/browser", ( ( 1, 0, 2 ), ( 2, 0, 0 ) ) )
+        , ( "elm/bytes", ( ( 1, 0, 8 ), ( 2, 0, 0 ) ) )
+        , ( "elm/core", ( ( 1, 0, 5 ), ( 2, 0, 0 ) ) )
+        , ( "elm/file", ( ( 1, 0, 5 ), ( 2, 0, 0 ) ) )
+        , ( "elm/html", ( ( 1, 0, 0 ), ( 2, 0, 0 ) ) )
+        , ( "elm/http", ( ( 2, 0, 0 ), ( 3, 0, 0 ) ) )
+        , ( "elm/json", ( ( 1, 1, 3 ), ( 2, 0, 0 ) ) )
+        , ( "elm/parser", ( ( 1, 1, 0 ), ( 2, 0, 0 ) ) )
+        , ( "elm/svg", ( ( 1, 0, 1 ), ( 2, 0, 0 ) ) )
+        , ( "elm/time", ( ( 1, 0, 0 ), ( 2, 0, 0 ) ) )
+        , ( "elm/url", ( ( 1, 0, 0 ), ( 2, 0, 0 ) ) )
+        , ( "elm/virtual-dom", ( ( 1, 0, 0 ), ( 2, 0, 0 ) ) )
+        , ( "elm-explorations/linear-algebra", ( ( 1, 0, 3 ), ( 2, 0, 0 ) ) )
+        , ( "elm-explorations/test", ( ( 2, 0, 0 ), ( 3, 0, 0 ) ) )
+        , ( "elm-explorations/webgl", ( ( 1, 1, 3 ), ( 2, 0, 0 ) ) )
+        , ( "folkertdev/elm-sha2", ( ( 1, 0, 0 ), ( 2, 0, 0 ) ) )
+        , ( "ianmackenzie/elm-units", ( ( 2, 9, 0 ), ( 3, 0, 0 ) ) )
+        , ( "lamdera/codecs", ( ( 1, 0, 0 ), ( 2, 0, 0 ) ) )
+        , ( "lamdera/core", ( ( 1, 0, 0 ), ( 2, 0, 0 ) ) )
+        , ( "mgold/elm-nonempty-list", ( ( 4, 2, 0 ), ( 5, 0, 0 ) ) )
+        , ( "lamdera/containers", ( ( 1, 0, 0 ), ( 2, 0, 0 ) ) )
+        ]
+            |> Dict.fromList
+      )
+    , ( ( "lamdera/containers", ( 1, 0, 0 ) )
+      , [ ( "elm/bytes", ( ( 1, 0, 8 ), ( 2, 0, 0 ) ) )
+        , ( "elm/core", ( ( 1, 0, 5 ), ( 2, 0, 0 ) ) )
+        , ( "lamdera/codecs", ( ( 1, 0, 0 ), ( 2, 0, 0 ) ) )
         ]
             |> Dict.fromList
       )
